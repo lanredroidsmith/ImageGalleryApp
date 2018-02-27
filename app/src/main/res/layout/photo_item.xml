@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanredroidsmith.imagegalleryapp.ui.common.SquareFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/albumItem"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/album_grid_item_height"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/desc_photo_item"
+        tools:src="@drawable/gele" />
+</com.lanredroidsmith.imagegalleryapp.ui.common.SquareFrameLayout>

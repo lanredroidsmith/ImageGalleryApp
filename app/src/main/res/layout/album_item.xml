@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanredroidsmith.imagegalleryapp.ui.common.SquareFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/albumItem"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/album_grid_item_height"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/latestImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:src="@drawable/gele"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/desc_album_item_image" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/translucent_background"
+        android:padding="@dimen/album_item_meta_padding"
+        android:layout_gravity="bottom">
+        <TextView
+            android:id="@+id/albumName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/grid_album_name_text_size"
+            tools:text="Album Name"/>
+        <TextView
+            android:id="@+id/photosCount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/grid_album_name_text_size"
+            tools:text="@string/album_photos_count"/>
+    </LinearLayout>
+</com.lanredroidsmith.imagegalleryapp.ui.common.SquareFrameLayout>

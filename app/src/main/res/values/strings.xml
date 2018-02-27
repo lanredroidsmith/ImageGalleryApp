@@ -1,0 +1,12 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Image Gallery App</string>
+    <string name="desc_album_item_image">Album\'s latest image</string>
+    <string name="album_photos_count"><xliff:g example="6" id="count">%s</xliff:g></string>
+    <string name="pls_enable_permission">Please enable permission to access storage to use app.</string>
+    <string name="no_images_found">No images found.</string>
+    <string name="error_occurred">An error occurred.</string>
+    <string name="desc_photo_item">Photo</string>
+
+    <string name="photo_not_found">Photo not found, might have been deleted.</string>
+    <string name="single_photo_transition_name">single_photo</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="album_item_meta_padding">8dp</dimen>
+    <dimen name="album_grid_item_width">160dp</dimen>
+    <dimen name="album_grid_item_height">100dp</dimen>
+    <dimen name="photo_grid_item_width">80dp</dimen>
+    <dimen name="photo_grid_item_height">80dp</dimen>
+    <dimen name="material_layout_default_padding">8dp</dimen>
+    <dimen name="grid_auto_fit_margin">2dp</dimen>
+    <dimen name="grid_album_name_text_size">12sp</dimen>
+    <dimen name="list_top_bottom_pad">4dp</dimen>
+</resources>

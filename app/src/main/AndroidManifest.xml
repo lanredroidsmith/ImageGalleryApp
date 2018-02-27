@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lanredroidsmith.imagegalleryapp">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.photo.PhotoAlbumActivity" />
+        <activity android:name=".ui.photo.SinglePhotoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <!--
+                    todo 'intent-filter' above is underlined with red if these 2 below
+                    are not declared even though they are automatically assumed
+                    if mimeType alone is specified. Why the error mark?
+                -->
+                <!--
+                    Presently, we deal with only what's already in the MediaStore.
+                    We'll add the file scheme too later in future.
+                -->
+                <data android:scheme="content" />
+                <!--<data android:scheme="file" />-->
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
